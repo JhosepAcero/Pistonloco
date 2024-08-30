@@ -103,20 +103,20 @@ while ($row = $resultado->fetch_assoc()) {
               </tr>
               <tr>
                 <td colspan="2" style="background: #ffffff"><b>SUBTOTAL</b></td>
-                <td class="total" style="background: #ffffff">L. '.($row['ingreso_total'] - $row['ingreso_impuesto']) .'</td>
+                <td class="total" style="background: #ffffff">Bs. '.($row['ingreso_total'] - $row['ingreso_impuesto']) .'</td>
               </tr>
               <tr>
                 <td colspan="2" style="background: #ffffff"><b>ISV '.($row['ingreso_porcentaje']*100) .'% </b></td>
-                <td class="total" style="background: #ffffff">L. '.$row['ingreso_impuesto'].'</td>
+                <td class="total" style="background: #ffffff">Bs. '.$row['ingreso_impuesto'].'</td>
               </tr>
               <tr>
                 <td colspan="2" style="background: #ffffff"><b>TOTAL NETO</b></td>
-                <td class="grand total" style="background: #ffffff">L. '.$row['ingreso_total'].'</td>
+                <td class="grand total" style="background: #ffffff">Bs. '.$row['ingreso_total'].'</td>
               </tr>';
           } else {
             $html.= '<tr>
               <td colspan="4"><b>TOTAL NETO</b></td>
-              <td class="grand total">L. '.$row['ingreso_total'].'</td>
+              <td class="grand total">Bs. '.$row['ingreso_total'].'</td>
             </tr>';
           }  
             $html.='
